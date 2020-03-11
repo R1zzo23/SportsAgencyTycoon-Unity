@@ -17,6 +17,7 @@ public class GameManager1 : MonoBehaviour
     public GameObject MainCanvas;
     public GameObject AgencyPanel;
     public Text AgencyNameText;
+    public Text ManagerFullNameText;
 
     int CurrentMoney;
     int InfluencePoints;
@@ -63,6 +64,7 @@ public class GameManager1 : MonoBehaviour
             manager.LastName = LastNameInput.text;
             manager.FullName = FirstNameInput.text + " " + LastNameInput.text;
             agency.Manager = manager;
+            ManagerFullNameText.text = manager.FullName;
             AgencyNameText.text = AgencyNameInput.text;
             CreateManagerAndAgencyCanvas.SetActive(false);
             MainCanvas.SetActive(true);

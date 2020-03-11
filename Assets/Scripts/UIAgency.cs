@@ -47,8 +47,8 @@ public class UIAgency : MonoBehaviour
     public void UpdateUI()
     {
         AgencyNameText.text = Agency.Name;
-        AgencyIPText.text = Agency.InfluencePoints.ToString();
-        AgencyMoneyText.text = Agency.Money.ToString();
+        AgencyIPText.text = "IP: " + Agency.InfluencePoints.ToString();
+        AgencyMoneyText.text = "Money: " + Agency.Money.ToString("C0");
     }
 
     public void ObtainLicenseOnClick()

@@ -1,20 +1,19 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager1.cs">
+﻿<Properties StartupConfiguration="{DD44FA93-C35F-D411-27BB-08EC0783165B}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ManagerDropdown.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameManager1.cs" Line="65" Column="38" />
-      <File FileName="Assets/Scripts/UIAgency.cs" Line="49" Column="43" />
+      <File FileName="Assets/Scripts/GameManager1.cs" Line="26" Column="39" />
+      <File FileName="Assets/Scripts/UIAgency.cs" Line="53" Column="1" />
       <File FileName="Assets/Scripts/Agency.cs" Line="16" Column="28" />
       <File FileName="Assets/Scripts/Manager.cs" Line="10" Column="1" />
+      <File FileName="Assets/Scripts/ManagerDropdown.cs" Line="42" Column="54" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SportsAgencyTycoon-Unity" expanded="True">
-            <Node name="Assembly-CSharp" expanded="True">
-              <Node name="Assets" expanded="True">
-                <Node name="Scripts" expanded="True">
-                  <Node name="GameManager1.cs" selected="True" />
-                </Node>
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="ManagerDropdown.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -24,6 +23,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b66f145f-9b68-4a7e-a588-35db5bcbd9fa" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
