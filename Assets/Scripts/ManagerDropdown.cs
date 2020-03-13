@@ -31,14 +31,11 @@ public class ManagerDropdown : MonoBehaviour
 
     public void Dropdown_IndexChanged(int index)
     {
-        Debug.Log(managerActions[index]);
         dropdownIndex = index;
     }
 
     public void ManagerActionButton_OnClick()
     {
-        Debug.Log("dropdownIndex: " + dropdownIndex);
-        if (dropdownIndex > 0)
-            Debug.Log(managerActions[dropdownIndex]);
+        Debug.Log(managerActions[dropdownIndex]);
     }
 }

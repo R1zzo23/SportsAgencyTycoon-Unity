@@ -19,8 +19,10 @@ public class GameManager1 : MonoBehaviour
     public Text AgencyNameText;
     public Text ManagerFullNameText;
 
+    
     int CurrentMoney;
     int InfluencePoints;
+    public bool TimerStarted = false;
 
 
     // Start is called before the first frame update
@@ -38,7 +40,7 @@ public class GameManager1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     void Awake()
@@ -67,6 +69,7 @@ public class GameManager1 : MonoBehaviour
             ManagerFullNameText.text = manager.FullName;
             AgencyNameText.text = AgencyNameInput.text;
             CreateManagerAndAgencyCanvas.SetActive(false);
+            TimerStarted = true;
             MainCanvas.SetActive(true);
         }
     }
@@ -96,5 +99,10 @@ public class GameManager1 : MonoBehaviour
     public float GetCurrentMoney()
     {
         return CurrentMoney;
+    }
+
+    public int GetCurrentIP()
+    {
+        return InfluencePoints;
     }
 }
