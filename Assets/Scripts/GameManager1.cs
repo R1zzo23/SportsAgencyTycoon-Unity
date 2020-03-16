@@ -59,18 +59,29 @@ public class GameManager1 : MonoBehaviour
             Debug.Log("Input a name for your agency.");
         else
         {
+            // create Agency
             Agency agency = AgencyPanel.GetComponent<Agency>();
             agency.Name = AgencyNameInput.text;
+
+            // create Manager
             Manager manager = new Manager();
             manager.FirstName = FirstNameInput.text;
             manager.LastName = LastNameInput.text;
             manager.FullName = FirstNameInput.text + " " + LastNameInput.text;
+
+            // assign Manager to Agency
             agency.Manager = manager;
+
+            // Update UI for Manager and Agency names
             ManagerFullNameText.text = manager.FullName;
             AgencyNameText.text = AgencyNameInput.text;
+
+            // hide manager create canvas and show main canvas
             CreateManagerAndAgencyCanvas.SetActive(false);
-            TimerStarted = true;
             MainCanvas.SetActive(true);
+
+            // start calendar timer
+            TimerStarted = true;
         }
     }
 
