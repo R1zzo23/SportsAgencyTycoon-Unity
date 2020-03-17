@@ -8,11 +8,12 @@ public class Office : MonoBehaviour
     public int PurchaseCost;
     public int MonthlyCost;
     public int EmployeeCapacity;
-    public Office(int level, int purchaseCost, int monthlyCost, int employeeCapacity)
+
+    public void CreateInitialOffice()
     {
-        Level = level;
-        PurchaseCost = purchaseCost;
-        MonthlyCost = monthlyCost;
-        EmployeeCapacity = employeeCapacity;
+        Level = 1;
+        PurchaseCost = 0;
+        MonthlyCost = 2500;
+        EmployeeCapacity = 1;
     }
 }

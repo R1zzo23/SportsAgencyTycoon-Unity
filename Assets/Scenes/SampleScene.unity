@@ -1258,8 +1258,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 448.3, y: 239}
-  m_SizeDelta: {x: -896.6, y: -478.1}
+  m_AnchoredPosition: {x: 313.3, y: 187.9}
+  m_SizeDelta: {x: -626.5, y: -375.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &599204367
 MonoBehaviour:
@@ -1309,7 +1309,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7c1b1e8a974f4cdf96a3c10cd6cb912, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AgencyPanel: {fileID: 1667433898}
   CalendarSlider: {fileID: 892111549}
   YearText: {fileID: 953572859}
   MonthText: {fileID: 953679725}
@@ -1558,6 +1557,7 @@ GameObject:
   - component: {fileID: 748625637}
   - component: {fileID: 748625639}
   - component: {fileID: 748625638}
+  - component: {fileID: 748625640}
   m_Layer: 0
   m_Name: GameManagerObject
   m_TagString: Untagged
@@ -1599,6 +1599,7 @@ MonoBehaviour:
   AgencyPanel: {fileID: 1667433898}
   Agency: {fileID: 0}
   Manager: {fileID: 0}
+  Office: {fileID: 0}
   AgencyNameText: {fileID: 178345033}
   ManagerFullNameText: {fileID: 1596742916}
   TimerStarted: 0
@@ -1644,12 +1645,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 
   Level: 0
+  Office: {fileID: 0}
   Money: 0
   InfluencePoints: 0
   AgentCount: 0
   ClientCount: 0
   Manager: {fileID: 0}
+  OfficeMonthlyCost: 0
+  OfficeMaxEmployee: 0
+  OfficeLevel: 0
+  OfficePurchaseCost: 0
   NextLicenseCost: 0
+--- !u!114 &748625640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748625634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35c4423b17a911e459f9b0f1a45115d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Level: 0
+  PurchaseCost: 0
+  MonthlyCost: 0
+  EmployeeCapacity: 0
 --- !u!1 &859256860
 GameObject:
   m_ObjectHideFlags: 0
@@ -3570,8 +3592,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.75500005}
   m_AnchorMax: {x: 0.38300002, y: 1}
-  m_AnchoredPosition: {x: -44, y: 10.274994}
-  m_SizeDelta: {x: -88, y: -21.45}
+  m_AnchoredPosition: {x: 4.5, y: 4.974991}
+  m_SizeDelta: {x: 9, y: -10.05}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1667433900
 MonoBehaviour:
@@ -3606,11 +3628,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 
   Level: 0
+  Office: {fileID: 0}
   Money: 0
   InfluencePoints: 0
   AgentCount: 0
   ClientCount: 0
   Manager: {fileID: 0}
+  OfficeMonthlyCost: 0
+  OfficeMaxEmployee: 0
+  OfficeLevel: 0
+  OfficePurchaseCost: 0
   NextLicenseCost: 0
 --- !u!114 &1667433902
 MonoBehaviour:
@@ -4597,8 +4624,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.6104912, y: 0.73580617}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -743.6699, y: -86.8}
-  m_SizeDelta: {x: -95.4, y: -39.2}
+  m_AnchoredPosition: {x: -524.55, y: -87.3}
+  m_SizeDelta: {x: 3.3875, y: -8.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2140371895
 MonoBehaviour:

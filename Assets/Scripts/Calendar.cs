@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class Calendar : MonoBehaviour
 {
-    Agency Agency;
-    public GameObject AgencyPanel;
     public Slider CalendarSlider;
     public Text YearText;
     public Text MonthText;
@@ -24,8 +22,6 @@ public class Calendar : MonoBehaviour
         monthNumber = 1;
         weekNumber = 1;
         UpdateCalendarText();
-
-        Agency = AgencyPanel.GetComponent<Agency>();
     }
 
     // Update is called once per frame
@@ -66,7 +62,7 @@ public class Calendar : MonoBehaviour
     }
     private void SetNewMonth()
     {
-        GameManager1.instance.AddToBalance(-Agency.OfficeMonthlyPayment());
+        GameManager1.instance.AddToBalance(-GameManager1.instance.Agency.Office.MonthlyCost);
 
         monthNumber++;
         if (monthNumber == 13)

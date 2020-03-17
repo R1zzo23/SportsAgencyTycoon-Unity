@@ -7,13 +7,17 @@ public class Agency : MonoBehaviour
     // public variables - Define Gameplay
     public string Name;
     public int Level;
-    Office Office;
+    public Office Office;
     //public Agent Manager;
     public int Money;
     public int InfluencePoints;
     public int AgentCount;
     public int ClientCount;
     public Manager Manager;
+    public int OfficeMonthlyCost;
+    public int OfficeMaxEmployee;
+    public int OfficeLevel;
+    public int OfficePurchaseCost;
 
     public int NextLicenseCost;
 
@@ -24,7 +28,6 @@ public class Agency : MonoBehaviour
         InfluencePoints = 10;
         Level = 0;
         NextLicenseCost = 10;
-        CreateInitialOffice();
     }
 
     // Update is called once per frame
@@ -33,9 +36,12 @@ public class Agency : MonoBehaviour
 
     }
 
-    public void CreateInitialOffice()
+    public void UpdateOfficeInfo()
     {
-        Office = new Office(1, 0, 2500, 1);
+        OfficeLevel = Office.Level;
+        OfficeMaxEmployee = Office.EmployeeCapacity;
+        OfficePurchaseCost = Office.PurchaseCost;
+        OfficeMonthlyCost = Office.MonthlyCost;
     }
 
     public int ObtainNextLicense()
@@ -56,9 +62,5 @@ public class Agency : MonoBehaviour
     {
         // pay monthly cost for Office
         GameManager1.instance.AddToBalance(-Office.MonthlyCost);
-    }
-    public int OfficeMonthlyPayment()
-    {
-        return Office.MonthlyCost;
     }
 }

@@ -18,12 +18,11 @@ public class GameManager1 : MonoBehaviour
     public GameObject AgencyPanel;
     public Agency Agency;
     public Manager Manager;
+    public Office Office;
     public Text AgencyNameText;
     public Text ManagerFullNameText;
 
     
-    int CurrentMoney;
-    int InfluencePoints;
     public bool TimerStarted = false;
 
 
@@ -35,12 +34,14 @@ public class GameManager1 : MonoBehaviour
 
         Agency = this.GetComponent<Agency>();
         Manager = this.GetComponent<Manager>();
+        Office = this.GetComponent<Office>();
 
         Agency.Money = 35000;
         Agency.InfluencePoints = 10;
+        Agency.Office = Office;
+        Agency.Office.CreateInitialOffice();
+        Agency.UpdateOfficeInfo();
 
-        CurrentMoney = 35000;
-        InfluencePoints = 10;
         if (OnUpdateBalance != null)
             OnUpdateBalance();
     }
@@ -97,21 +98,21 @@ public class GameManager1 : MonoBehaviour
 
     public void AddToBalance(int amt)
     {
-        CurrentMoney += amt;
+        Agency.Money += amt;
         if (OnUpdateBalance != null)
             OnUpdateBalance();
     }
 
     public void AddToIP(int amt)
     {
-        InfluencePoints += amt;
+        Agency.InfluencePoints += amt;
         if (OnUpdateBalance != null)
             OnUpdateBalance();
     }
 
     public bool CanBuy(int AmtToSpend)
     {
-        if (AmtToSpend <= CurrentMoney)
+        if (AmtToSpend <= Agency.Money)
             return true;
         else
             return false;
@@ -119,11 +120,11 @@ public class GameManager1 : MonoBehaviour
 
     public float GetCurrentMoney()
     {
-        return CurrentMoney;
+        return Agency.Money;
     }
 
     public int GetCurrentIP()
     {
-        return InfluencePoints;
+        return Agency.InfluencePoints;
     }
 }
