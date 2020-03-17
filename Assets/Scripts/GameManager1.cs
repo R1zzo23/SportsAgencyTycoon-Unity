@@ -16,6 +16,8 @@ public class GameManager1 : MonoBehaviour
     public InputField AgencyNameInput;
     public GameObject MainCanvas;
     public GameObject AgencyPanel;
+    public Agency Agency;
+    public Manager Manager;
     public Text AgencyNameText;
     public Text ManagerFullNameText;
 
@@ -30,6 +32,12 @@ public class GameManager1 : MonoBehaviour
     {
         MainCanvas.SetActive(false);
         CreateManagerAndAgencyCanvas.SetActive(true);
+
+        Agency = this.GetComponent<Agency>();
+        Manager = this.GetComponent<Manager>();
+
+        Agency.Money = 35000;
+        Agency.InfluencePoints = 10;
 
         CurrentMoney = 35000;
         InfluencePoints = 10;
@@ -60,21 +68,23 @@ public class GameManager1 : MonoBehaviour
         else
         {
             // create Agency
-            Agency agency = AgencyPanel.GetComponent<Agency>();
-            agency.Name = AgencyNameInput.text;
+            //Agency agency = AgencyPanel.GetComponent<Agency>();
+            //agency.Name = AgencyNameInput.text;
+            Agency.Name = AgencyNameInput.text;
+
 
             // create Manager
-            Manager manager = new Manager();
-            manager.FirstName = FirstNameInput.text;
-            manager.LastName = LastNameInput.text;
-            manager.FullName = FirstNameInput.text + " " + LastNameInput.text;
+            //Manager manager = new Manager();
+            Manager.FirstName = FirstNameInput.text;
+            Manager.LastName = LastNameInput.text;
+            Manager.FullName = FirstNameInput.text + " " + LastNameInput.text;
 
             // assign Manager to Agency
-            agency.Manager = manager;
+            Agency.Manager = Manager;
 
             // Update UI for Manager and Agency names
-            ManagerFullNameText.text = manager.FullName;
-            AgencyNameText.text = AgencyNameInput.text;
+            ManagerFullNameText.text = Manager.FullName;
+            AgencyNameText.text = Agency.Name;
 
             // hide manager create canvas and show main canvas
             CreateManagerAndAgencyCanvas.SetActive(false);

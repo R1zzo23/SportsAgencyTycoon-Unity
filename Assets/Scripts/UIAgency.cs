@@ -32,7 +32,6 @@ public class UIAgency : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AgencyNameText.text = Agency.Name;
         UpdateUI();
 
         //BuyButtonText.text = "Buy: " + Agency.GetNextStoreCost().ToString("C2");
@@ -46,9 +45,9 @@ public class UIAgency : MonoBehaviour
 
     public void UpdateUI()
     {
-        AgencyNameText.text = Agency.Name;
-        AgencyIPText.text = "IP: " + Agency.InfluencePoints.ToString();
-        AgencyMoneyText.text = "Money: " + Agency.Money.ToString("C0");
+        AgencyNameText.text = GameManager1.instance.Agency.Name;
+        AgencyIPText.text = "IP: " + GameManager1.instance.Agency.InfluencePoints.ToString();
+        AgencyMoneyText.text = "Money: " + GameManager1.instance.Agency.Money.ToString("C0");
     }
 
     public void ObtainLicenseOnClick()
