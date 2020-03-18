@@ -21,6 +21,8 @@ public class Agency : MonoBehaviour
 
     public int NextLicenseCost;
 
+    public List<Sports> LicensesHeld = new List<Sports>();
+
     // Start is called before the first frame update
     void Start()
     {

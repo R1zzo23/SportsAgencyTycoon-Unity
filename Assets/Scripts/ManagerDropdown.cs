@@ -36,6 +36,21 @@ public class ManagerDropdown : MonoBehaviour
 
     public void ManagerActionButton_OnClick()
     {
-        Debug.Log(managerActions[dropdownIndex]);
+        // Obtain Next License
+        if (dropdownIndex == 1)
+        {
+            GameManager1.instance.ObtainNextLicense();
+        }
+        // Search For Client
+        else if (dropdownIndex == 2)
+        {
+            if (GameManager1.instance.Agency.LicensesHeld.Count == 0)
+                Debug.Log("Need to obtain a sports license before signing a player.");
+        }
+        // Freelance Work
+        else if (dropdownIndex == 3)
+        {
+
+        }
     }
 }

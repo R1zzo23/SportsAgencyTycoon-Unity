@@ -19,6 +19,7 @@ public class GameManager1 : MonoBehaviour
     public Agency Agency;
     public Manager Manager;
     public Office Office;
+    public World World;
     public Text AgencyNameText;
     public Text ManagerFullNameText;
 
@@ -35,6 +36,7 @@ public class GameManager1 : MonoBehaviour
         Agency = this.GetComponent<Agency>();
         Manager = this.GetComponent<Manager>();
         Office = this.GetComponent<Office>();
+        World = this.GetComponent<World>();
 
         Agency.Money = 35000;
         Agency.InfluencePoints = 10;
@@ -126,5 +128,20 @@ public class GameManager1 : MonoBehaviour
     public int GetCurrentIP()
     {
         return Agency.InfluencePoints;
+    }
+    public void ObtainNextLicense()
+    {
+        int licenseCount = Agency.LicensesHeld.Count;
+        int nextLicenseCost = World.LicenseCost[licenseCount];
+
+        if (Agency.InfluencePoints >= nextLicenseCost)
+        {
+            Agency.LicensesHeld.Add(World.LicenseOrder[licenseCount]);
+            AddToIP(-nextLicenseCost);
+        }
+        else
+        {
+            Debug.Log("Not enough IP to purchase license.");
+        }
     }
 }
