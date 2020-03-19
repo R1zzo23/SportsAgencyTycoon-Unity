@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Sports.cs" />
     <Compile Include="Assets\Scripts\UIAgency.cs" />
     <Compile Include="Assets\Scripts\World.cs" />
+    <Compile Include="Assets\Scripts\WorldCanvas.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/adamrizzo/Github/SportsAgencyTycoon-Unity/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

@@ -12,7 +12,7 @@ public class Calendar : MonoBehaviour
     int yearNumber;
     int monthNumber;
     int weekNumber;
-    int WeekTimer = 1;
+    int WeekTimer = 10;
     float CurrentTimer = 0;
 
     // Start is called before the first frame update

@@ -14,12 +14,17 @@ public class GameManager1 : MonoBehaviour
     public InputField FirstNameInput;
     public InputField LastNameInput;
     public InputField AgencyNameInput;
+
     public GameObject MainCanvas;
     public GameObject AgencyPanel;
+    public GameObject WorldCanvas;
+    public GameObject TopBarCanvas;
+
     public Agency Agency;
     public Manager Manager;
     public Office Office;
     public World World;
+    public WorldCanvas WorldCanvasScript;
     public Text AgencyNameText;
     public Text ManagerFullNameText;
 
@@ -30,13 +35,16 @@ public class GameManager1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        TopBarCanvas.SetActive(false);
         MainCanvas.SetActive(false);
+        WorldCanvas.SetActive(false);
         CreateManagerAndAgencyCanvas.SetActive(true);
 
         Agency = this.GetComponent<Agency>();
         Manager = this.GetComponent<Manager>();
         Office = this.GetComponent<Office>();
         World = this.GetComponent<World>();
+        WorldCanvasScript = this.GetComponent<WorldCanvas>();
 
         Agency.Money = 35000;
         Agency.InfluencePoints = 10;
@@ -92,6 +100,7 @@ public class GameManager1 : MonoBehaviour
             // hide manager create canvas and show main canvas
             CreateManagerAndAgencyCanvas.SetActive(false);
             MainCanvas.SetActive(true);
+            TopBarCanvas.SetActive(true);
 
             // start calendar timer
             TimerStarted = true;
@@ -143,5 +152,10 @@ public class GameManager1 : MonoBehaviour
         {
             Debug.Log("Not enough IP to purchase license.");
         }
+    }
+    public void ShowWorldCanvas()
+    {
+        WorldCanvas.SetActive(true);
+        MainCanvas.SetActive(false);
     }
 }
