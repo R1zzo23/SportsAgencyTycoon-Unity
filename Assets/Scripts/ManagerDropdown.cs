@@ -17,8 +17,24 @@ public class ManagerDropdown : MonoBehaviour
 
     void DetermineManagerActions()
     {
+        managerActions.Clear();
+        int licenseCount;
+        int licenseCost;
+
+        if (GameManager1.instance == null || GameManager1.instance.Agency == null || GameManager1.instance.World == null)
+        {
+            licenseCount = 0;
+            licenseCost = 10;
+        }
+        else
+        {
+            licenseCount = GameManager1.instance.Agency.LicensesHeld.Count;
+            licenseCost = GameManager1.instance.World.LicenseCost[GameManager1.instance.Agency.LicensesHeld.Count];
+        }
+            
+
         managerActions.Add("Manager Actions:");
-        managerActions.Add("Obtain Next License");
+        managerActions.Add("Obtain " + GameManager1.instance.World.LicenseOrder[licenseCount].ToString() + " License - " + licenseCost.ToString() + " IP");
         managerActions.Add("Search for Client");
         managerActions.Add("Freelance");
     }
@@ -39,7 +55,12 @@ public class ManagerDropdown : MonoBehaviour
         // Obtain Next License
         if (dropdownIndex == 1)
         {
-            GameManager1.instance.ObtainNextLicense();
+            bool gotLicense = GameManager1.instance.ObtainNextLicense();
+            if (gotLicense)
+            {
+                DetermineManagerActions();
+                PopulateList();
+            }
         }
         // Search For Client
         else if (dropdownIndex == 2)

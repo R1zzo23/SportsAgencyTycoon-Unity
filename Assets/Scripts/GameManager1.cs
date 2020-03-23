@@ -138,7 +138,7 @@ public class GameManager1 : MonoBehaviour
     {
         return Agency.InfluencePoints;
     }
-    public void ObtainNextLicense()
+    public bool ObtainNextLicense()
     {
         int licenseCount = Agency.LicensesHeld.Count;
         int nextLicenseCost = World.LicenseCost[licenseCount];
@@ -147,12 +147,21 @@ public class GameManager1 : MonoBehaviour
         {
             Agency.LicensesHeld.Add(World.LicenseOrder[licenseCount]);
             AddToIP(-nextLicenseCost);
+            UpdateNextLicenseCost();
+            return true;
         }
         else
         {
             Debug.Log("Not enough IP to purchase license.");
+            return false;
         }
     }
+
+    public void UpdateNextLicenseCost()
+    {
+        Agency.NextLicenseCost = World.LicenseCost[Agency.LicensesHeld.Count];
+    }
+
     public void ShowWorldCanvas()
     {
         WorldCanvas.SetActive(true);

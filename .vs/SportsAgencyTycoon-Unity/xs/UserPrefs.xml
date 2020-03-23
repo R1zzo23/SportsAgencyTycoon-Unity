@@ -1,15 +1,15 @@
 ﻿<Properties StartupConfiguration="{DD44FA93-C35F-D411-27BB-08EC0783165B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ManagerDropdown.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameManager1.cs" Line="38" Column="21" />
+      <File FileName="Assets/Scripts/GameManager1.cs" Line="161" Column="6" />
       <File FileName="Assets/Scripts/UIAgency.cs" Line="64" Column="1" />
-      <File FileName="Assets/Scripts/Agency.cs" />
+      <File FileName="Assets/Scripts/Agency.cs" Line="58" Column="36" />
       <File FileName="Assets/Scripts/Office.cs" />
-      <File FileName="Assets/Scripts/Calendar.cs" Line="15" Column="23" />
+      <File FileName="Assets/Scripts/Calendar.cs" />
       <File FileName="Assets/Scripts/Sports.cs" />
-      <File FileName="Assets/Scripts/World.cs" />
-      <File FileName="Assets/Scripts/ManagerDropdown.cs" Line="53" Column="1" />
-      <File FileName="Assets/Scripts/WorldCanvas.cs" Line="22" Column="58" />
+      <File FileName="Assets/Scripts/World.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ManagerDropdown.cs" Line="32" Column="13" />
+      <File FileName="Assets/Scripts/WorldCanvas.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,7 +17,7 @@
           <Node name="SportsAgencyTycoon-Unity" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="GameManager1.cs" selected="True" />
+                <Node name="ManagerDropdown.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -27,7 +27,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2a8c9a3f-bae4-42be-8f39-3365f16f27e4" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2bc236ff-70bf-4986-a319-10193481b0c4" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
