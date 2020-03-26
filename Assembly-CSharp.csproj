@@ -66,13 +66,16 @@
     <Compile Include="Assets\Scripts\Agency.cs" />
     <Compile Include="Assets\Scripts\Calendar.cs" />
     <Compile Include="Assets\Scripts\GameManager1.cs" />
+    <Compile Include="Assets\Scripts\LoadTeamData.cs" />
     <Compile Include="Assets\Scripts\Manager.cs" />
     <Compile Include="Assets\Scripts\ManagerDropdown.cs" />
     <Compile Include="Assets\Scripts\Office.cs" />
     <Compile Include="Assets\Scripts\Sports.cs" />
+    <Compile Include="Assets\Scripts\Team.cs" />
     <Compile Include="Assets\Scripts\UIAgency.cs" />
     <Compile Include="Assets\Scripts\World.cs" />
     <Compile Include="Assets\Scripts\WorldCanvas.cs" />
+    <None Include="Assets\Data\TeamData.xml" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/adamrizzo/Github/SportsAgencyTycoon-Unity/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

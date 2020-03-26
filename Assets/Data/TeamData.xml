@@ -1,0 +1,194 @@
+﻿<teamdata>
+  <SoccerTeam>
+    <City>Atlanta</City>
+    <Mascot>United FC</Mascot>
+    <Conference>Eastern</Conference>
+    <Abbreviation>ATL</Abbreviation>
+    <MarketValue>55</MarketValue>
+    <TitleContender>43</TitleContender>
+  </SoccerTeam>
+<SoccerTeam>
+    <City>Chicago</City>
+    <Mascot>Fire</Mascot>
+    <Conference>Eastern</Conference>
+    <Abbreviation>CHI</Abbreviation>
+    <MarketValue>45</MarketValue>
+    <TitleContender>30</TitleContender>
+  </SoccerTeam>
+<SoccerTeam>
+    <City>Cincinnati</City>
+    <Mascot>FC</Mascot>
+    <Conference>Eastern</Conference>
+    <Abbreviation>CIN</Abbreviation>
+    <MarketValue>33</MarketValue>
+    <TitleContender>28</TitleContender>
+  </SoccerTeam>
+<SoccerTeam>
+    <City>Colorado</City>
+    <Mascot>Rapids</Mascot>
+    <Conference>Western</Conference>
+    <Abbreviation>COL</Abbreviation>
+    <MarketValue>37</MarketValue>
+    <TitleContender>43</TitleContender>
+  </SoccerTeam>
+<SoccerTeam>
+    <City>Columbus</City>
+    <Mascot>Crew SC</Mascot>
+    <Conference>Eastern</Conference>
+    <Abbreviation>CLM</Abbreviation>
+    <MarketValue>39</MarketValue>
+    <TitleContender>49</TitleContender>
+  </SoccerTeam>
+<SoccerTeam>
+    <City>D.C.</City>
+    <Mascot>United</Mascot>
+    <Conference>Eastern</Conference>
+    <Abbreviation>DCU</Abbreviation>
+    <MarketValue>41</MarketValue>
+    <TitleContender>51</TitleContender>
+  </SoccerTeam>
+<SoccerTeam>
+    <City>Dallas</City>
+    <Mascot>FC</Mascot>
+    <Conference>Western</Conference>
+    <Abbreviation>DAL</Abbreviation>
+    <MarketValue>43</MarketValue>
+    <TitleContender>41</TitleContender>
+  </SoccerTeam>
+<SoccerTeam>
+    <City>Houston</City>
+    <Mascot>Dynamo</Mascot>
+    <Conference>Western</Conference>
+    <Abbreviation>HOU</Abbreviation>
+    <MarketValue>41</MarketValue>
+    <TitleContender>42</TitleContender>
+  </SoccerTeam>
+<SoccerTeam>
+    <City>LA</City>
+    <Mascot>Galaxy</Mascot>
+    <Conference>Western</Conference>
+    <Abbreviation>LAG</Abbreviation>
+    <MarketValue>66</MarketValue>
+    <TitleContender>75</TitleContender>
+  </SoccerTeam>
+<SoccerTeam>
+    <City>Los Angeles</City>
+    <Mascot>FC</Mascot>
+    <Conference>Western</Conference>
+    <Abbreviation>LAFC</Abbreviation>
+    <MarketValue>60</MarketValue>
+    <TitleContender>68</TitleContender>
+  </SoccerTeam>
+<SoccerTeam>
+    <City>Minnesota</City>
+    <Mascot>United FC</Mascot>
+    <Conference>Western</Conference>
+    <Abbreviation>MIN</Abbreviation>
+    <MarketValue>37</MarketValue>
+    <TitleContender>33</TitleContender>
+  </SoccerTeam>
+<SoccerTeam>
+    <City>Montreal</City>
+    <Mascot>Impact</Mascot>
+    <Conference>Eastern</Conference>
+    <Abbreviation>MON</Abbreviation>
+    <MarketValue>31</MarketValue>
+    <TitleContender>37</TitleContender>
+  </SoccerTeam>
+<SoccerTeam>
+    <City>New England</City>
+    <Mascot>Revolution</Mascot>
+    <Conference>Eastern</Conference>
+    <Abbreviation>NE</Abbreviation>
+    <MarketValue>33</MarketValue>
+    <TitleContender>54</TitleContender>
+  </SoccerTeam>
+<SoccerTeam>
+    <City>New York City</City>
+    <Mascot>FC</Mascot>
+    <Conference>Eastern</Conference>
+    <Abbreviation>NYCFC</Abbreviation>
+    <MarketValue>57</MarketValue>
+    <TitleContender>57</TitleContender>
+  </SoccerTeam>
+<SoccerTeam>
+    <City>New York</City>
+    <Mascot>Red Bulls</Mascot>
+    <Conference>Eastern</Conference>
+    <Abbreviation>NYRB</Abbreviation>
+    <MarketValue>55</MarketValue>
+    <TitleContender>50</TitleContender>
+  </SoccerTeam>
+<SoccerTeam>
+    <City>Orlando City</City>
+    <Mascot>FC</Mascot>
+    <Conference>Eastern</Conference>
+    <Abbreviation>ORL</Abbreviation>
+    <MarketValue>44</MarketValue>
+    <TitleContender>39</TitleContender>
+  </SoccerTeam>
+<SoccerTeam>
+    <City>Philadelphia</City>
+    <Mascot>Union</Mascot>
+    <Conference>Eastern</Conference>
+    <Abbreviation>PHI</Abbreviation>
+    <MarketValue>31</MarketValue>
+    <TitleContender>43</TitleContender>
+  </SoccerTeam>
+<SoccerTeam>
+    <City>Portland</City>
+    <Mascot>Timbers</Mascot>
+    <Conference>Western</Conference>
+    <Abbreviation>POR</Abbreviation>
+    <MarketValue>62</MarketValue>
+    <TitleContender>70</TitleContender>
+  </SoccerTeam>
+<SoccerTeam>
+    <City>Salt Lake</City>
+    <Mascot>Real</Mascot>
+    <Conference>Western</Conference>
+    <Abbreviation>RSL</Abbreviation>
+    <MarketValue>31</MarketValue>
+    <TitleContender>36</TitleContender>
+  </SoccerTeam>
+<SoccerTeam>
+    <City>San Jose</City>
+    <Mascot>Earthquakes</Mascot>
+    <Conference>Western</Conference>
+    <Abbreviation>SJ</Abbreviation>
+    <MarketValue>36</MarketValue>
+    <TitleContender>46</TitleContender>
+  </SoccerTeam>
+<SoccerTeam>
+    <City>Seattle</City>
+    <Mascot>Sounders FC</Mascot>
+    <Conference>Western</Conference>
+    <Abbreviation>SEA</Abbreviation>
+    <MarketValue>77</MarketValue>
+    <TitleContender>75</TitleContender>
+  </SoccerTeam>
+<SoccerTeam>
+    <City>Kansas City</City>
+    <Mascot>Sporting</Mascot>
+    <Conference>Western</Conference>
+    <Abbreviation>KC</Abbreviation>
+    <MarketValue>35</MarketValue>
+    <TitleContender>47</TitleContender>
+  </SoccerTeam>
+<SoccerTeam>
+    <City>Toronto</City>
+    <Mascot>FC</Mascot>
+    <Conference>Eastern</Conference>
+    <Abbreviation>TOR</Abbreviation>
+    <MarketValue>41</MarketValue>
+    <TitleContender>57</TitleContender>
+  </SoccerTeam>
+<SoccerTeam>
+    <City>Vancouver</City>
+    <Mascot>Whitecaps</Mascot>
+    <Conference>Western</Conference>
+    <Abbreviation>VAN</Abbreviation>
+    <MarketValue>29</MarketValue>
+    <TitleContender>31</TitleContender>
+  </SoccerTeam>
+</teamdata>

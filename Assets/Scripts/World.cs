@@ -8,6 +8,7 @@ public class World : MonoBehaviour
 
     public List<Sports> LicenseOrder = new List<Sports>();
     public List<int> LicenseCost = new List<int>();
+    public List<Team> SoccerTeams = new List<Team>();
 
     // Start is called before the first frame update
     void Start()
