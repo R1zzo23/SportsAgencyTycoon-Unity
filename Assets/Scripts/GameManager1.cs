@@ -19,14 +19,15 @@ public class GameManager1 : MonoBehaviour
     public GameObject AgencyPanel;
     public GameObject WorldCanvas;
     public GameObject TopBarCanvas;
+    public GameObject FreelanceCanvas;
 
     public Agency Agency;
     public Manager Manager;
     public Office Office;
     public World World;
-    public WorldCanvas WorldCanvasScript;
     public Text AgencyNameText;
     public Text ManagerFullNameText;
+    public FreelanceCanvas FreelanceCanvasScript;
 
     
     public bool TimerStarted = false;
@@ -38,13 +39,14 @@ public class GameManager1 : MonoBehaviour
         TopBarCanvas.SetActive(false);
         MainCanvas.SetActive(false);
         WorldCanvas.SetActive(false);
+        FreelanceCanvas.SetActive(false);
         CreateManagerAndAgencyCanvas.SetActive(true);
 
         Agency = this.GetComponent<Agency>();
         Manager = this.GetComponent<Manager>();
         Office = this.GetComponent<Office>();
         World = this.GetComponent<World>();
-        WorldCanvasScript = this.GetComponent<WorldCanvas>();
+        FreelanceCanvasScript = this.GetComponent<FreelanceCanvas>();
 
         Agency.Money = 35000;
         Agency.InfluencePoints = 10;

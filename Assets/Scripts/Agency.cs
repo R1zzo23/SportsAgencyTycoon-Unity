@@ -18,6 +18,7 @@ public class Agency : MonoBehaviour
     public int OfficeMaxEmployee;
     public int OfficeLevel;
     public int OfficePurchaseCost;
+    public bool FreelanceBefore = false;
 
     public int NextLicenseCost;
 
