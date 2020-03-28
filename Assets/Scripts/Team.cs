@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Team : MonoBehaviour
+public class Team
 {
     public string City;
     public string Mascot;

@@ -1,18 +1,11 @@
 ﻿<Properties StartupConfiguration="{DD44FA93-C35F-D411-27BB-08EC0783165B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LoadTeamData.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/WorldCanvas.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameManager1.cs" Line="161" Column="6" />
-      <File FileName="Assets/Scripts/UIAgency.cs" />
-      <File FileName="Assets/Scripts/Agency.cs" />
-      <File FileName="Assets/Scripts/Office.cs" />
-      <File FileName="Assets/Scripts/Calendar.cs" />
-      <File FileName="Assets/Scripts/Sports.cs" />
-      <File FileName="Assets/Scripts/World.cs" Line="10" Column="38" />
-      <File FileName="Assets/Scripts/ManagerDropdown.cs" Line="32" Column="13" />
-      <File FileName="Assets/Scripts/WorldCanvas.cs" />
-      <File FileName="Assets/Data/TeamData.xml.cs" Line="10" Column="13" />
-      <File FileName="Assets/Scripts/LoadTeamData.cs" Line="62" Column="1" />
-      <File FileName="Assets/Scripts/Team.cs" Line="120" Column="2" />
+      <File FileName="Assets/Scripts/GameManager1.cs" Line="166" Column="6" />
+      <File FileName="Assets/Scripts/World.cs" Line="12" Column="54" />
+      <File FileName="Assets/Scripts/WorldCanvas.cs" Line="45" Column="1" />
+      <File FileName="Assets/Scripts/LoadTeamData.cs" Line="109" Column="1" />
+      <File FileName="Assets/Data/TeamData.xml" Line="473" Column="12" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,7 +14,7 @@
             <Node name="Assets" expanded="True">
               <Node name="Data" expanded="True" />
               <Node name="Scripts" expanded="True">
-                <Node name="LoadTeamData.cs" selected="True" />
+                <Node name="WorldCanvas.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -31,7 +24,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f5d06cde-0c05-4e2b-a443-241851970f32" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2b7b398c-1ebd-4589-9f68-d7a326c17917" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
