@@ -71,6 +71,7 @@ public class ManagerDropdown : MonoBehaviour
         // Freelance Work
         else if (dropdownIndex == 3)
         {
+            //GameManager1.instance.MainCanvas.SetActive(false);
             GameManager1.instance.FreelanceCanvas.SetActive(true);
         }
     }

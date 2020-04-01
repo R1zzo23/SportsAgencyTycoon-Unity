@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Agency.cs" />
     <Compile Include="Assets\Scripts\Calendar.cs" />
     <Compile Include="Assets\Scripts\FreelanceCanvas.cs" />
+    <Compile Include="Assets\Scripts\FreelanceJob.cs" />
     <Compile Include="Assets\Scripts\GameManager1.cs" />
     <Compile Include="Assets\Scripts\LoadTeamData.cs" />
     <Compile Include="Assets\Scripts\Manager.cs" />
